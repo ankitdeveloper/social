@@ -4,16 +4,16 @@
 
 @section('content')
 
-        @if(Auth::check())
-<div>
+    @if(Auth::check())
+        <div>
 
-          {!! Form::open(array('action' => 'MessagesController@receiveForm')) !!}
-              {!! Form::text('message', "Enter your message here:") !!}
-            
+            {!! Form::open(array('action' => 'MessagesController@receiveForm')) !!}
+            {!! Form::text('message', "Enter your message here:") !!}
 
-              <br>
-              {!! Form::submit('Click Me!') !!}
-          {!! Form::close() !!}
-        @endif
-</div>
+
+            <br>
+            {!! Form::submit('Click Me!') !!}
+            {!! Form::close() !!}
+            @endif
+        </div>
 @endsection
